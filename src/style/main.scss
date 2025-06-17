@@ -1,0 +1,74 @@
+@import './header.scss';
+@import './filters.scss';
+@import './map.scss';
+@import './resources.scss';
+
+.wrm-schedule-visit-main-container {
+    padding: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrm-schedule-visit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+.wrm-schedule-visit-logo {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
+}
+
+.wrm-schedule-visit-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    color: #1f2937;
+
+    @media (min-width: 768px) {
+        font-size: 1rem;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 1rem;
+    }
+}
+
+.wrm-schedule-visit-subtitle {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0.25rem 0 0;
+
+    @media (max-width: 480px) {
+        font-size: 0.8rem;
+    }
+}
+
+.wrm-schedule-visit-header-right {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+
+    @media (max-width: 768px) {
+        align-self: flex-end;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.85rem;
+        align-self: flex-start;
+    }
+}

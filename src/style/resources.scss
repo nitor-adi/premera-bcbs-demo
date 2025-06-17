@@ -1,0 +1,61 @@
+.wrm-resources-container {
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+
+    .wrm-info-cards {
+        display: flex;
+        flex-direction: column;
+
+        .wrm-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0.25rem 0;
+
+            // Border only on all except the last card
+            &:not(:last-child) {
+                border-bottom: 1px solid #cccccc;
+            }
+
+            p {
+                margin: 0.25rem 0;
+                color: #374151;
+                font-size: 0.95rem;
+            }
+
+            .wrm-card-title {
+                font-size: 1rem;
+                color: #1f2937;
+                margin-bottom: 0.25rem;
+            }
+
+            .wrm-card-sub-title {
+                font-size: 0.875rem;
+                color: #6b7280;
+            }
+
+            .wrm-select-button {
+                height: 2rem;
+                margin-top: 0.5rem;
+                padding: 0.1rem 1.5rem;
+                background-color: #ffffff;
+                color: #007d8a;
+                border: 1px solid #007d8a;
+                border-radius: 4px;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 0.875rem;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: #006773;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

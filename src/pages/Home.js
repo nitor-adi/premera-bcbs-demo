@@ -1,11 +1,13 @@
-import Dashboard from '../component/Dashboard';
-import Header from '../component/Header';
+import Header from './Header';
+import Filters from './Filters';
+import ScheduleVisitsMap from './Map';
 
 export default function Home() {
     return (
-        <div>
+        <div className="wrm-schedule-visit-main-container">
             <Header />
-            <Dashboard />
+            <Filters />
+            <ScheduleVisitsMap />
         </div>
     );
 }

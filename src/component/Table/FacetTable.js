@@ -1,6 +1,10 @@
 import { FacetData } from '../../config';
 
 export default function FacetTable() {
+    console.log(
+        '--------------------->>>>>>>',
+        sessionStorage.getItem('access_token')
+    );
     return (
         <div className="rounded-md border p-2 bg-white overflow-x-auto">
             <h2 className="text-lg font-bold mb-2">Facet report summary</h2>
